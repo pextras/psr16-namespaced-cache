@@ -1,0 +1,13 @@
+{
+    "name": "pextra/psr16-namespaced-cache",
+    "description": "Namespaced PSR-16 cache",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Josef Drabek",
+            "email": "jsf@drbk.cz"
+        }
+    ],
+    "require": {}
+}
