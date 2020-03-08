@@ -1,0 +1,16 @@
+language: php
+php:
+  - 7.1
+  - 7.2
+  - 7.3
+  - 7.4
+
+before_install:
+  # turn off XDebug
+  - phpenv config-rm xdebug.ini || return 0
+
+install:
+  - travis_retry composer install --no-progress --prefer-dist
+
+script:
+  - vendor/bin/tester tests -s
